@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ userObj }) => {
+export default ({ refreshUser, userObj }) => {
   const history = useHistory();
   const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
   const onLogOutClick = () => {
@@ -22,6 +22,7 @@ export default ({ userObj }) => {
       await userObj.updateProfile({
         displayName: newDisplayName,
       });
+      refreshUser();
     }
   };
   // const getMyNweets = async () => {
