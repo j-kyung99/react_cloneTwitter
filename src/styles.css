@@ -227,14 +227,18 @@ form {
 
 .authBtn {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   padding: 10px 0px;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   width: 150px;
   background: white;
   cursor: pointer;
+}
+
+.authBtn span {
+  margin-right: 5px;
 }
 
 /* AuthForm */
@@ -243,7 +247,7 @@ form {
   max-width: 320px;
   width: 100%;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   font-size: 12px;
